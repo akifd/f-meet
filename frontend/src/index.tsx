@@ -15,8 +15,8 @@ function JoinForm() {
 
   return <Form>
     <Row>
-      <Col>{video}</Col>
-      <Col>
+      <Col sm={6}>{video}</Col>
+      <Col sm={6}>
         <Form.Group class="mb-3" controlId="formName">
           <Form.Label>Name</Form.Label>
           <Form.Control type="text" placeholder="Enter name" />
