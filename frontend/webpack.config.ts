@@ -1,19 +1,16 @@
-import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 export default {
   mode: 'development',
   entry: './src/index.tsx',
+  devtool: 'inline-source-map',
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'public'),
-    },
-    compress: true,
     host: '0.0.0.0',
     port: 3000,
+    hot: false,
   },
   resolve: {
-    extensions: ['.tsx', '.ts'],
+    extensions: ['.js', '.jsx', '.tsx', '.ts'],
     modules: ['node_modules'],
   },
   module: {
