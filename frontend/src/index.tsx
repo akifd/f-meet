@@ -21,7 +21,7 @@ function JoinForm() {
 }
 
 
-function HelloWorld() {
+function App() {
   return <>
     <div class="container">
       <h1 class="display-1">F-Meet</h1>
@@ -32,4 +32,4 @@ function HelloWorld() {
   </>
 }
 
-render(() => <HelloWorld />, document.getElementById('app'))
+render(() => <App />, document.getElementById('app'))
